@@ -7,7 +7,7 @@ if (strlen(session_id())<1)
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>SIS| SCHOOL</title>
+   <title>SCHOOL</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -19,8 +19,8 @@ if (strlen(session_id())<1)
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="../public/css/_all-skins.min.css">
-    <link rel="apple-touch-icon" href="../public/img/apple-touch-icon.png">
-    <link rel="shortcut icon" href="../public/img/favicon.ico">
+    <link rel="apple-touch-icon" href="../public/img/colegio.png">
+    <link rel="shortcut icon" href="../public/img/colegio.png">
 
     <!-- DATATABLES -->
     <link rel="stylesheet" type="text/css" href="../public/datatables/jquery.dataTables.min.css">    
@@ -28,7 +28,7 @@ if (strlen(session_id())<1)
     <link href="../public/datatables/responsive.dataTables.min.css" rel="stylesheet"/>
 
     <link rel="stylesheet" type="text/css" href="../public/css/bootstrap-select.min.css">
-
+<script src="https://kit.fontawesome.com/9ac3f17ed5.js" crossorigin="anonymous"></script>
   </head>
 
 <body class="hold-transition skin-blue sidebar-mini">
@@ -64,9 +64,9 @@ if (strlen(session_id())<1)
     <!-- Logo -->
     <a href="escritorio.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>SIS</b> S</span>
+      <span class="logo-mini"><b></b>S</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>SIS</b> SCHOOL</span>
+      <span class="logo-lg"><b></b>SCHOOL</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -122,7 +122,7 @@ if (strlen(session_id())<1)
 <br>
        <?php 
 if ($_SESSION['escritorio']==1) {
-  echo ' <li><a href="escritorio.php"><i class="fa  fa-dashboard (alias)"></i> <span>Escritorio</span></a>
+  echo ' <li><a href="escritorio.php"><i class="fas fa-desktop"></i> <span>Escritorio</span></a>
         </li>';
 }
         ?> 
@@ -132,13 +132,13 @@ if ($_SESSION['escritorio']==1) {
 if ($_SESSION['grupos']==1) {
   echo '<li class="treeview">
           <a href="#">
-            <i class="fa fa-shopping-cart"></i> <span>Grupos</span>
+            <i class="fas fa-layer-group"></i> <span>Grupos</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="grupos.php"><i class="fa fa-circle-o"></i> Grupos</a></li>
+            <li><a href="grupos.php"><i class="fas fa-bars"></i> Grupos</a></li>
           </ul>
         </li>';
 }
@@ -155,7 +155,7 @@ if ($_SESSION['grupos']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a href="asistencia.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fa fa-circle-o"></i> Agregar</a></li>
+          <li><a href="asistencia.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fas fa-bars"></i> Agregar</a></li>
           </ul>
         </li>
           <li class="treeview">
@@ -166,7 +166,7 @@ if ($_SESSION['grupos']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a href="conducta.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fa fa-circle-o"></i> Agregar</a></li>
+          <li><a href="conducta.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fas fa-bars"></i> Agregar</a></li>
           </ul>
         </li>
           <li class="treeview">
@@ -177,7 +177,7 @@ if ($_SESSION['grupos']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a href="calificaciones.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fa fa-circle-o"></i> Calificaciones</a></li>
+          <li><a href="calificaciones.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fas fa-bars"></i> Calificaciones</a></li>
           </ul>
         </li>
           <li class="treeview">
@@ -188,7 +188,7 @@ if ($_SESSION['grupos']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a id="btncursos" href="cursos.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fa fa-circle-o"></i> Agregar</a></li>
+          <li><a id="btncursos" href="cursos.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fas fa-bars"></i> Agregar</a></li>
           </ul>
         </li>
           <li class="treeview">
@@ -199,7 +199,7 @@ if ($_SESSION['grupos']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-          <li><a id="btnlistas" href="listasis.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fa fa-circle-o"></i> Agregar</a></li>
+          <li><a id="btnlistas" href="listasis.php?idgrupo=<?php echo $_GET["idgrupo"]; ?>"><i class="fas fa-bars"></i> Agregar</a></li>
           </ul>
         </li>
           <?php endif; ?>
@@ -215,14 +215,14 @@ if ($_SESSION['acceso']==1) {
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="usuario.php"><i class="fa fa-circle-o"></i> Profesores</a></li>
-            <li><a href="permiso.php"><i class="fa fa-circle-o"></i> Permisos</a></li>
+            <li><a href="usuario.php"><i class="fas fa-bars"></i> Profesores</a></li>
+            <li><a href="permiso.php"><i class="fas fa-bars"></i> Permisos</a></li>
           </ul>
         </li>';
 }
         ?>     
         <li><a href="#"><i class="fa fa-question-circle"></i> <span>Ayuda</span><small class="label pull-right bg-yellow">PDF</small></a></li>
-        <li><a href="https://www.compartiendocodigos.com/" target="_blanck"><i class="fa  fa-exclamation-circle"></i> <span>Acerca de</span><small class="label pull-right bg-yellow">ComCod</small></a></li>   
+        <li><a href="https://www.compartiendocodigos.com/" target="_blanck"><i class="fa  fa-exclamation-circle"></i> <span>Info. Adicional</span></a></li>   
         
       </ul>
     </section>
