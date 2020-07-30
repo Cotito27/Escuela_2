@@ -1,0 +1,17 @@
+
+body{
+
+}
+p{
+     background: #bdf0fa; color: #0c92ac; font-weight: bold; padding: 15px; border: 2px solid #abecf9; border-radius: 6px;
+   background: #e2fdf4; color: rgb(110,110,110); font-weight: bold; padding: 15px; border: 2px solid #bdfae6; border-radius: 6px;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background:rgb(230,230,230); color: rgb(70,70,70); font-weight: bold; padding: 15px; border: 4px solid rgb(195,195,195) ; border-radius: 6px;
+}

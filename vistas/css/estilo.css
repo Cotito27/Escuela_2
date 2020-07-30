@@ -1,0 +1,36 @@
+body{
+	margin:0;
+	padding: 0;
+}
+*{
+	
+}
+.fondo{
+	background: #859291;
+}
+#main-container{
+	margin:100px auto;
+	width: 1200px;
+}
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width:  100%;
+}
+tr,td{
+	padding: 20px;
+}
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px;
+	color: white;
+}
+tr:nth-child(even){
+	background-color: #ddd;
+
+}
+tr:hover td{
+	background-color: #369681;
+	color: white;
+}

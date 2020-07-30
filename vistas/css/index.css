@@ -1,0 +1,43 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size:100vw 100vh;
+
+background-attachment:fixed;
+background-image: url("../images/FONDO6.jpg");
+
+}
+.container{
+  max-width: 440px;
+  background: #6219d6;
+  color: rgb(247, 251, 253);
+  background: transparent;
+  border-radius: 50px;
+     
+
+}
+h3{
+  font-size: 48px;
+font-weight: bold;
+ 
+}
+
+.card{
+  
+background: rgb(20, 98, 177);
+background-size:100vw 100vh;
+background-attachment:fixed;
+background: rgba(97, 158, 216, 0.425);
+    border-radius: 20px;
+    font-size: 24px;
+}
+label{
+  font-size: 10px;
+
+}
+#usuario,#password{
+  background: rgb(200, 210, 219);
+  border-style: double; 
+  border-color:  rgb(49, 51, 184);
+}
